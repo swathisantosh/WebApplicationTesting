@@ -1,0 +1,21 @@
+<suite name="TestNG Suite" parallel="tests">
+
+ <test name="on Firefox">
+ <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.GRID.NewToursLogInTest"/>
+    </classes>
+  </test>
+
+
+<test name="on Chrome">
+ <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.GRID.NewToursLogInTest"/>
+    </classes>
+  </test>
+
+
+
+
+</suite>

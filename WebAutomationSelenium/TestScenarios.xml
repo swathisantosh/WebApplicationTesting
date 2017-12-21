@@ -1,0 +1,29 @@
+
+<suite name="TestNG Suite" parallel="tests">
+
+ <test name="DataDriven Testing">
+    <classes>
+      <class name="com.DataDrivenTesting.NewUserRegistration_ExcelTestData"/>
+    </classes>
+  </test>
+
+
+ <test name="DataDriven LinkTesting">
+    <classes>
+      <class name="com.DataDrivenTesting.NewToursLinks_ExcelDataTesting"/>
+    </classes>
+  </test>
+
+ <test name="KeyWordDriven LinkTesting">
+    <classes>
+      <class name="com.KeywordDrivenTesting.NewToursLoginTest"/>
+    </classes>
+  </test>
+
+
+  <test name="POM Testing">
+    <classes>
+      <class name="com.POM.NewToursHomePageTesting"/>
+    </classes>
+  </test> 
+</suite>

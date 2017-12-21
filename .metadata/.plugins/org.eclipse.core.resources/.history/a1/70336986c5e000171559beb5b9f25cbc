@@ -1,0 +1,14 @@
+#Name locator for username element
+UserName=userName
+#Name locator for Passowrd element
+Password=password
+#Name locator for Login element
+SignIn=login
+#firstName
+FirstName=firstName
+#lastName
+LastName=lastName
+#phone
+Phone=phone
+#Email
+Email=userName

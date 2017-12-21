@@ -1,0 +1,33 @@
+package newToursApplicationTest;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class NewToursLogInTest
+{
+
+	@Given("^Open Firefox Browser and Navigate to NewTours Application$")
+	public void Open_Firefox_Browser_and_Navigate_to_NewTours_Application() throws Throwable
+	{
+	   
+	}
+
+	@When("^User enters Valid UserName and Password and perform Click operation on SignIn Button$")
+	public void User_enters_Valid_UserName_and_Password_and_perform_Click_operation_on_SignIn_Button() throws Throwable
+	{
+	 
+	}
+
+	@Then("^User should be successfully LogIn to the Application and SignOff$")
+	public void User_should_be_successfully_LogIn_to_the_Application_and_SignOff() throws Throwable
+	{
+	 
+	}
+
+	@Then("^User should close the Browser$")
+	public void User_should_close_the_Browser() throws Throwable
+	{
+	
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="6.727">
+    <testsuite name="Feature: NewTours Application Testing" time="6.727">
+      <testsuite name="Scenario: NewTours LogIn  Functionality Testing" time="6.727">
+        <testcase name="Given Open Firefox Browser and Navigate to NewTours Application" classname="Scenario: NewTours LogIn  Functionality Testing" time="5.212"/>
+        <testcase name="When User enters Valid UserName and Password and perform Click operation on SignIn Button" classname="Scenario: NewTours LogIn  Functionality Testing" time="0.497"/>
+        <testcase name="Then User should be successfully LogIn to the Application and SignOff" classname="Scenario: NewTours LogIn  Functionality Testing" time="1.017"/>
+        <testcase name="Then User should close the Browser" classname="Scenario: NewTours LogIn  Functionality Testing" time="0.001"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

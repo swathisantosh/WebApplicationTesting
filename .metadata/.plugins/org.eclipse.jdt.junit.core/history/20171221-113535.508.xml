@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="Cucumber" tests="8" started="8" failures="0" errors="2" ignored="0">
+  <testsuite name="runner.TestRunner" time="34.039">
+    <testsuite name="Feature: NewTours Application Testing" time="34.039">
+      <testsuite name="Scenario: NewTours LogIn  Functionality Testing" time="34.039" incomplete="true">
+        <error>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-G4M0PBI', ip: '10.0.0.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f3476da4-2a4e-4147-b348-8f288a85849b&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)&#13;
+	at newToursApplicationTest.NewToursLogInTest.User_should_close_the_Browser(NewToursLogInTest.java:39)&#13;
+	at ✽.Then User should close the Browser(newTours.feature:13)&#13;
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)&#13;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)&#13;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)&#13;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#13;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)&#13;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)&#13;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#13;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)&#13;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)&#13;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)&#13;
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)&#13;
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)&#13;
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)&#13;
+	at newToursApplicationTest.NewToursLogInTest.User_should_close_the_Browser(NewToursLogInTest.java:39)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:44)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:40)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:35)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:38)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:268)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:45)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:40)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: java.net.ConnectException: Connection refused: connect&#13;
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)&#13;
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)&#13;
+	at java.net.PlainSocketImpl.connect(Unknown Source)&#13;
+	at java.net.SocksSocketImpl.connect(Unknown Source)&#13;
+	at java.net.Socket.connect(Unknown Source)&#13;
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)&#13;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)&#13;
+	... 56 more&#13;
+&#13;
+</error>
+        <testcase name="Given Open Firefox Browser and Navigate to NewTours Application" classname="Scenario: NewTours LogIn  Functionality Testing" time="9.438"/>
+        <testcase name="When User enters Valid UserName and Password and perform Click operation on SignIn Button" classname="Scenario: NewTours LogIn  Functionality Testing" time="0.64"/>
+        <testcase name="Then User should be successfully LogIn to the Application and SignOff" classname="Scenario: NewTours LogIn  Functionality Testing" time="1.055"/>
+        <testcase name="Then User should close the Browser" classname="Scenario: NewTours LogIn  Functionality Testing" time="12.392"/>
+        <testcase name="Given Open Firefox Browser and Navigate to NewTours App" classname="Scenario: NewTours LogIn  Functionality Testing" time="8.661"/>
+        <testcase name="When User clicks on Register link and Enters Details" classname="Scenario: NewTours LogIn  Functionality Testing" time="0.262"/>
+        <testcase name="Then User should be successfully Registered to the Application" classname="Scenario: NewTours LogIn  Functionality Testing" time="1.125"/>
+        <testcase name="Then User should close the Browser" classname="Scenario: NewTours LogIn  Functionality Testing" time="0.466">
+          <error>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'DESKTOP-G4M0PBI', ip: '10.0.0.32', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_151'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f3476da4-2a4e-4147-b348-8f288a85849b&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)&#13;
+	at newToursApplicationTest.NewToursLogInTest.User_should_close_the_Browser(NewToursLogInTest.java:39)&#13;
+	at ✽.Then User should close the Browser(newTours.feature:13)&#13;
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:7055 [/127.0.0.1] failed: Connection refused: connect&#13;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)&#13;
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)&#13;
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)&#13;
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)&#13;
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)&#13;
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)&#13;
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)&#13;
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)&#13;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)&#13;
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)&#13;
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)&#13;
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)&#13;
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.execute(NewProfileExtensionConnection.java:160)&#13;
+	at org.openqa.selenium.firefox.FirefoxDriver$LazyCommandExecutor.execute(FirefoxDriver.java:380)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)&#13;
+	at newToursApplicationTest.NewToursLogInTest.User_should_close_the_Browser(NewToursLogInTest.java:39)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;
+	at java.lang.reflect.Method.invoke(Unknown Source)&#13;
+	at cucumber.runtime.Utils$1.call(Utils.java:44)&#13;
+	at cucumber.runtime.Timeout.timeout(Timeout.java:12)&#13;
+	at cucumber.runtime.Utils.invoke(Utils.java:40)&#13;
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:35)&#13;
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:38)&#13;
+	at cucumber.runtime.Runtime.runStep(Runtime.java:268)&#13;
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:45)&#13;
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:40)&#13;
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:36)&#13;
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:83)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)&#13;
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:77)&#13;
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:82)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:678)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+Caused by: java.net.ConnectException: Connection refused: connect&#13;
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)&#13;
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)&#13;
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)&#13;
+	at java.net.PlainSocketImpl.connect(Unknown Source)&#13;
+	at java.net.SocksSocketImpl.connect(Unknown Source)&#13;
+	at java.net.Socket.connect(Unknown Source)&#13;
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)&#13;
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)&#13;
+	... 56 more&#13;
+&#13;
+</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

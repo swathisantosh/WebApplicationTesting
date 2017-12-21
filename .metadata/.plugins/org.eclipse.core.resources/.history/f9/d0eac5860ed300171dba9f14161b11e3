@@ -1,0 +1,52 @@
+package com.CapturingTitle_FaceBook;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ValidatingTitle_FaceBook {
+
+	public static void main(String[] args)
+	{
+		
+		System.setProperty("webdriver.chrome.driver", "c:\\chromedriver.exe");
+		
+		//FirefoxDriver driver = new FirefoxDriver();
+		  driver.get("http://facebook.com");
+		  
+		  System.out.println(driver.getTitle());
+		  
+		  String ExpectedTitle="Facebook – log in or sign up";
+		  System.out.println(ExpectedTitle);
+		  
+		  String ActualTitle=driver.getTitle();
+		  
+		  if(ActualTitle.equals(ExpectedTitle))
+		  {
+		   System.out.println("Title Matched -- PASS");
+		  }
+		  else
+		  {
+		   System.out.println("Title Not Matched -- FAIL");
+		  }
+		  
+		  System.out.println();
+		  
+		  String ExpectedUrl="facebook.com";
+		  System.out.println(ExpectedUrl);
+		  
+		  String ActualUrl=driver.getCurrentUrl();
+		  System.out.println(ActualUrl);
+		  
+		  if(ActualUrl.contains(ExpectedUrl))
+		  {
+		   System.out.println("URL matched -- PASS");
+		  }
+		  else
+		  {
+		   System.out.println("URL not matched -- FAIL");
+		  }
+		  
+		  driver.close();
+
+	}
+
+}

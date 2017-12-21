@@ -1,0 +1,54 @@
+package newToursApplicationTest;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+
+public class RegisterUser {
+	
+FirefoxDriver driver;
+@Given("^Open Firefox Browser and Navigate to NewTours App$")
+public void Open_Firefox_Browser_and_Navigate_to_NewTours_Application() throws Throwable
+{
+   driver=new FirefoxDriver();
+   driver.get("http://newtours.demoaut.com");
+}
+	@When("^User clicks on Register link and Enters Details$")
+	public void User_clicks_on_Register_link_and_Enters_Details() throws Throwable {
+	  
+	   driver.findElementByLinkText("REGISTER").click();	
+		driver.findElementByName("firstName").sendKeys("Swathi");
+		driver.findElementByName("lastName").sendKeys("Test");
+		driver.findElementByName("phone").sendKeys("98989898");
+		driver.findElementByName("userName").sendKeys("stest@gmail.com");
+		driver.findElementByName("address1").sendKeys("address 1");
+		driver.findElementByName("city").sendKeys("stest");
+		driver.findElementByName("state").sendKeys("Telangana");
+		driver.findElementByName("postalCode").sendKeys("500042");
+		driver.findElementByName("country").sendKeys("INDIA");
+		driver.findElementByName("email").sendKeys("stest1");
+		driver.findElementByName("password").sendKeys("stest");
+		driver.findElementByName("confirmPassword").sendKeys("stest");
+		driver.findElementByName("register").click();
+	}
+
+	@Then("^User should be successfully Registered to the Application$")
+	public void User_should_be_successfully_Registered_to_the_Application() throws Throwable {
+
+		String ActualString=driver.findElementByXPath("html/body/div[1]/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[3]/td/p[3]/a/font/b").getText();
+		String ExpectedString= "stest1.";
+		
+		if(ActualString.endsWith(ExpectedString))
+		{
+			System.out.println("UserName valid- PASSED");
+		}
+		else
+		{
+			System.out.println("UserName valid- FAILED");
+		}
+	}
+
+}

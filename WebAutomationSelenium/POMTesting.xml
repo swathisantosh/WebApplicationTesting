@@ -1,0 +1,8 @@
+
+<suite name="TestNG Suite">
+  <test name="POM Testing">
+    <classes>
+      <class name="com.POM.NewToursHomePageTesting"/>
+    </classes>
+  </test> 
+</suite>

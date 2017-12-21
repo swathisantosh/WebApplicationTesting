@@ -1,0 +1,21 @@
+<suite name="TestNG Suite">
+
+ <test name="GRID Testing">
+ <parameter name="Browser" value="firefox"/>
+    <classes>
+      <class name="com.GRID.NewToursLogInTest"/>
+    </classes>
+  </test>
+
+
+<test name="GRID Testing">
+ <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.GRID.NewToursLogInTest"/>
+    </classes>
+  </test>
+
+
+
+
+</suite>
